@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+$mainFont: 'Exo 2', sans-serif;
+$themeColor: #FBD784;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: $mainFont;
+    color: white;
+    background-color: #0b1d26;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Times New Roman', Times, serif !important;
+}
+a{
+    text-decoration: none !important;
+}
+.container{
+    @media (min-width:1600px){
+        width: 1440px;
+        max-width: 100%;
+    }
+}

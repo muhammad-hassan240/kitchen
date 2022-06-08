@@ -1,0 +1,162 @@
+@import './common-css/common.scss';
+
+// Main Background Section
+.main-bg-section{
+    background-image: url('/assets/images/main-bg.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 900px;
+    height: 100%;
+    position: relative;
+    mask-image: linear-gradient(to top, transparent 5%, black 65%);
+    @media (max-width:1440px){
+        min-height: 700px;
+    }
+    .container-fluid{
+        padding: 0 !important;
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        background-color: rgba(11, 29, 38, 0.4);
+        width: 100%;
+        height: 100%;
+    }
+    .main-navbar{
+        padding: 25px 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        .logo{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+            letter-spacing: 1.4px;
+            @media (max-width:1440px){
+                font-size: 34px;
+            }
+            a{
+                color: #fff;
+            }
+        }
+        .navbar-links{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 0;
+                li{
+                    list-style: none;
+                    margin: auto 20px;
+                    &:first-of-type{
+                        margin-left: 0;
+                    }
+                    a{
+                        color: #fff;
+                        font-size: 22px;
+                        font-weight: 500;
+                        @media (max-width:1440px){
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-bg-content{
+        max-width: 60%;
+        margin: 0 auto ;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 650px;
+        position: relative;
+        z-index: 1;
+        @media (max-width:1440px){
+            height: 525px;
+            max-width: 50%;
+        }
+        h1{
+            font-size: 88px;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: capitalize;
+            @media (max-width:1600px){
+                font-size: 75px;
+            }
+            @media (max-width:1440px){
+                font-size: 65px;
+            }
+        }   
+    }
+}
+// Details Section 
+.details-section{
+   
+}
+// Footer Section
+.footer-section{
+    padding: 5rem 0 2rem;
+    .footer-left{
+        padding-right: 60px;
+        h2{
+            font-size: 36px;
+            @media (max-width:1440x) {
+                font-size: 28px;
+            }
+        }
+        p{
+            font-size: 18px;
+            max-width: 60%;
+            &:last-of-type{
+                opacity: 0.5;
+                margin-top: 50px;
+                font-size: 16px;
+                @media (max-width:1440px){
+                    font-size: 14px;
+                }
+            }
+            @media(max-width:1440px){
+                font-size: 16px;
+            }
+        }
+    }
+    .footer-right{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 45px 0 105px;
+        margin-top: 2px;
+        .content-left, .content-right{
+            h3{
+                color: #FBD784;
+                font-family: 'Gilroy' !important;
+                font-weight: 600;
+                font-size: 22px;
+                letter-spacing: 1.1px;
+                @media (max-width:1440px){
+                    font-size: 18px;
+                    letter-spacing: unset;
+                }
+            }
+            ul{
+                padding-left: 0;
+                li{
+                    list-style: none;
+                    margin-bottom: 8px;
+                    font-size: 16px;
+                    @media (max-width:1440px){
+                        font-size: 14px;
+                    }
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes scrollDown {
+    50%{
+        transform: translateY(5px);
+    }
+}
